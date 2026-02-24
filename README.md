@@ -151,12 +151,6 @@ line 2
 
 ---
 
-## 👥 Authors
-
-- **[Arnaud Durand](https://github.com/Wesper-Dev)** — 42 Paris
-
----
-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d333b,50:58a6ff,100:3fb950&height=100&section=footer" width="100%"/>
 </p>
