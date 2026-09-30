@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d333b,50:58a6ff,100:3fb950&height=200&section=header&text=Minishell&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=A%20POSIX-Compliant%20Shell%20in%20C&descSize=18&descAlignY=55&animation=twinkling" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d333b,50:58a6ff,100:3fb950&height=200&section=header&text=Minishell&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=A%20Bash-like%20Shell%20in%20C&descSize=18&descAlignY=55&animation=twinkling" width="100%"/>
 </p>
 
 <p align="center">
@@ -13,9 +13,11 @@
 
 ## 📖 About
 
-**Minishell** is a lightweight POSIX-compliant shell built entirely in C as part of the [42 School](https://42.fr/) curriculum. It replicates core behaviors of `bash`, including command execution, pipes, redirections, environment variable expansion, and signal handling — all implemented from scratch using raw system calls.
+**Minishell** is a small bash-like shell built in C as part of the [42 School](https://42.fr/) curriculum. It replicates core behaviors of `bash`, including command execution, pipes, redirections, environment variable expansion, and signal handling, implemented from scratch with UNIX system calls.
 
-> _"As beautiful as a shell."_ — 42 Subject
+Built in a pair with [@juaugry](https://github.com/juaugry) at 42 Paris; I focused on command execution, pipes and redirections.
+
+> _"As beautiful as a shell."_ (42 subject)
 
 ---
 
@@ -39,7 +41,7 @@
 ```
 Minishell/
 ├── includes/
-│   └── minishell.h          # Main header — structs, prototypes, macros
+│   └── minishell.h          # Main header: structs, prototypes, macros
 ├── srcs/
 │   ├── builtins/            # Built-in command implementations
 │   │   ├── cd.c
@@ -142,12 +144,12 @@ line 2
 
 ## 📚 Key Concepts Learned
 
-- **Process creation** — `fork()`, `execve()`, `waitpid()`
-- **Inter-process communication** — `pipe()`, `dup2()`
-- **File descriptor management** — redirections, here-documents
-- **Lexing & Parsing** — tokenization, recursive descent
-- **Signal handling** — `sigaction()`, terminal control
-- **Memory management** — custom allocators, leak-free design
+- **Process creation**: `fork()`, `execve()`, `waitpid()`
+- **Inter-process communication**: `pipe()`, `dup2()`
+- **File descriptor management**: redirections, here-documents
+- **Lexing & Parsing**: tokenization, recursive descent
+- **Signal handling**: `sigaction()`, terminal control
+- **Memory management**: custom allocators, leak-free design
 
 ---
 
